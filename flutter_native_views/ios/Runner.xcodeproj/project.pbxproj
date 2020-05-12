@@ -3,13 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
+		8862A26B246A3B540027280C /* NormalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862A26A246A3B540027280C /* NormalView.m */; };
+		8862A26E246A3D160027280C /* NormalViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862A26D246A3D160027280C /* NormalViewFactory.m */; };
+		8862A275246A41460027280C /* AdvFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862A274246A41460027280C /* AdvFirstViewController.m */; };
+		8862A279246A430E0027280C /* AdvSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862A278246A430E0027280C /* AdvSecondViewController.m */; };
+		8862A27C246A43DB0027280C /* AdvancedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862A27B246A43DB0027280C /* AdvancedView.m */; };
+		8862A27F246A44920027280C /* AdvancedViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862A27E246A44920027280C /* AdvancedViewFactory.m */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
@@ -35,6 +41,18 @@
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
+		8862A269246A3B540027280C /* NormalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalView.h; sourceTree = "<group>"; };
+		8862A26A246A3B540027280C /* NormalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalView.m; sourceTree = "<group>"; };
+		8862A26C246A3D160027280C /* NormalViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalViewFactory.h; sourceTree = "<group>"; };
+		8862A26D246A3D160027280C /* NormalViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalViewFactory.m; sourceTree = "<group>"; };
+		8862A273246A41460027280C /* AdvFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvFirstViewController.h; sourceTree = "<group>"; };
+		8862A274246A41460027280C /* AdvFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvFirstViewController.m; sourceTree = "<group>"; };
+		8862A277246A430E0027280C /* AdvSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvSecondViewController.h; sourceTree = "<group>"; };
+		8862A278246A430E0027280C /* AdvSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvSecondViewController.m; sourceTree = "<group>"; };
+		8862A27A246A43DB0027280C /* AdvancedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedView.h; sourceTree = "<group>"; };
+		8862A27B246A43DB0027280C /* AdvancedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedView.m; sourceTree = "<group>"; };
+		8862A27D246A44920027280C /* AdvancedViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedViewFactory.h; sourceTree = "<group>"; };
+		8862A27E246A44920027280C /* AdvancedViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedViewFactory.m; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
 		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +73,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8862A268246A3B310027280C /* NormalView */ = {
+			isa = PBXGroup;
+			children = (
+				8862A269246A3B540027280C /* NormalView.h */,
+				8862A26A246A3B540027280C /* NormalView.m */,
+				8862A26C246A3D160027280C /* NormalViewFactory.h */,
+				8862A26D246A3D160027280C /* NormalViewFactory.m */,
+			);
+			name = NormalView;
+			sourceTree = "<group>";
+		};
+		8862A272246A41120027280C /* AdvancedView */ = {
+			isa = PBXGroup;
+			children = (
+				8862A273246A41460027280C /* AdvFirstViewController.h */,
+				8862A274246A41460027280C /* AdvFirstViewController.m */,
+				8862A277246A430E0027280C /* AdvSecondViewController.h */,
+				8862A278246A430E0027280C /* AdvSecondViewController.m */,
+				8862A27A246A43DB0027280C /* AdvancedView.h */,
+				8862A27B246A43DB0027280C /* AdvancedView.m */,
+				8862A27D246A44920027280C /* AdvancedViewFactory.h */,
+				8862A27E246A44920027280C /* AdvancedViewFactory.m */,
+			);
+			name = AdvancedView;
+			sourceTree = "<group>";
+		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +130,8 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				8862A272246A41120027280C /* AdvancedView */,
+				8862A268246A3B310027280C /* NormalView */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -212,8 +258,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8862A26B246A3B540027280C /* NormalView.m in Sources */,
+				8862A279246A430E0027280C /* AdvSecondViewController.m in Sources */,
+				8862A27F246A44920027280C /* AdvancedViewFactory.m in Sources */,
+				8862A27C246A43DB0027280C /* AdvancedView.m in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				8862A26E246A3D160027280C /* NormalViewFactory.m in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				8862A275246A41460027280C /* AdvFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +355,10 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
@@ -418,7 +473,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -437,7 +493,10 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
@@ -464,7 +523,10 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
