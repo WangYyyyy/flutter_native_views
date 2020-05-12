@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <Button
+        android:id="@+id/toPush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="push to next view"
+        tools:ignore="HardcodedText"/>
+    <Button
+        android:id="@+id/toClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="close this view"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

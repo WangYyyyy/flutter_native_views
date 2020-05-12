@@ -29,7 +29,7 @@ class MainView extends StatelessWidget {
             child: GestureDetector(
               onTap: () => _pushToNativeView(context),
               child: Text(
-                "Flutter view\n点击进行Flutter页面跳转",
+                "Flutter view\n点击进行Flutter页面跳转到原生页面",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 24,
@@ -57,11 +57,11 @@ class MainView extends StatelessWidget {
         viewType: 'advancedView',
       );
       Navigator.push(context, MaterialPageRoute(builder: (context) => Scaffold(body: uiKitView,),));
-
-      
     } else if (Platform.isAndroid){
-      print('不支持的平台');
-      return null;
+      final androidView = AndroidView(
+        viewType: 'advancedView',
+      );
+      Navigator.push(context, MaterialPageRoute(builder: (context) => Scaffold(body: androidView,),));
     } else {
       print('不支持的平台');
       return null;
@@ -72,13 +72,17 @@ class MainView extends StatelessWidget {
     if (Platform.isIOS) {
       final uiKitView = UiKitView(
         viewType: 'normalView',
-        creationParams: {'value': 'Flutter传来的参数'},
+        creationParams: {'value': 'Flutter传给iOS的参数'},
         creationParamsCodec: StandardMessageCodec(),
       );
       return uiKitView;
     } else if (Platform.isAndroid){
-      print('不支持的平台');
-      return null;
+      final androidView = AndroidView(
+        viewType: 'normalView',
+        creationParams: {'value': 'Flutter传给Android的参数'},
+        creationParamsCodec: StandardMessageCodec(),
+      );
+      return androidView;
     } else {
       print('不支持的平台');
       return null;
